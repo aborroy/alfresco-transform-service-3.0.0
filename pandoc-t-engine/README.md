@@ -1,4 +1,4 @@
-# Hello World T-Engine
+# Pandoc T-Engine
 
 ## Purpose
 This is an example Hello World transformer used to demonstrate how to create a simple transformer based on
@@ -20,6 +20,8 @@ and as a docker image in the local docker registry.
 
 Before proceeding to start the container, confirm that the build was successful and the local docker
 registry contains the **alfresco/pandoc-t-engine** image.
+
+>> If you are using Apple Silicon or aarch64, use the project https://github.com/cagix/pandoc-hugo-m1 to build **pandoc/core:latest-ubuntu** locally before executing the Maven install command.
 
 ## Run in Docker
 
