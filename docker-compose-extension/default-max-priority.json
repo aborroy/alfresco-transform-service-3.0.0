@@ -1,0 +1,20 @@
+{
+  "supportedDefaults": [
+    {
+      "transformerName": "Office",             
+      "sourceMediaType": "application/zip",
+      "maxSourceSizeBytes": 18874368
+    },
+    {
+      "sourceMediaType": "application/msword", 
+      "maxSourceSizeBytes": 4194304,
+      "priority": 45
+    },
+    {
+      "priority": 60                           
+    },
+    {
+      "maxSourceSizeBytes": -1                 
+    }
+  ]
+}

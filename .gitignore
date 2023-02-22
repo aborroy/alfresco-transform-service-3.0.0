@@ -1,0 +1,25 @@
+#Ignore Mac OS X DS Store
+.DS_Store
+
+*~
+*.swp
+.project
+.settings
+.classpath
+.factorypath
+
+# Ignore all build/dist directories
+target
+
+# Ignore InteliJ Idea project files
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Ignore all log files
+*.log
+
+#Ignore Test Output
+test-output
+/.checkstyle

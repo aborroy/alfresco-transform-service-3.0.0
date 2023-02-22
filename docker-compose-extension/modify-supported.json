@@ -1,0 +1,24 @@
+{
+  "addSupported": [
+    {
+      "transformerName": "imagemagick",
+      "sourceMediaType": "image/tiff",
+      "targetMediaType": "application/pdf",
+      "maxSourceSizeBytes": -1
+    }
+  ],
+  "overrideSupported": [
+    {
+      "transformerName": "PdfBox",
+      "sourceMediaType": "application/pdf",
+      "targetMediaType": "text/plain",
+      "maxSourceSizeBytes": -1
+    },
+    {
+      "transformerName": "TikaAuto",
+      "sourceMediaType": "application/pdf",
+      "targetMediaType": "text/plain",
+      "maxSourceSizeBytes": -1
+    }
+  ]
+}
