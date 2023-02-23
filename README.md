@@ -225,11 +225,11 @@ To create a new Transform Engine, implementing two Java interfaces is required:
 * `org.alfresco.transform.base.TransformEngine` to provide basic information about the Engine and the Transform pipelines
 * `org.alfresco.transform.base.CustomTransformer` to implement the transformation operation
 
-Sample implementation for a [Pandoc](https://pandoc.org) Transform Engine is provided in [PandocTransformEngine.java](pandoc-t-engine/src/main/java/org/alfresco/transform/PandocTransformEngine.java) and Custom Transformer in [MarkdownTransformer.java](pandoc-t-engine/src/main/java/org/alfresco/transform/MarkdownTransformer.java)
+Sample implementation for a [Pandoc](https://pandoc.org) Transform Engine is provided in [PandocTransformEngine.java](pandoc-t-engine/src/main/java/org/alfresco/transform/PandocTransformEngine.java) and Custom Transformers in [MarkdownTransformer.java](pandoc-t-engine/src/main/java/org/alfresco/transform/MarkdownTransformer.java) and [LatexTransformer.java](pandoc-t-engine/src/main/java/org/alfresco/transform/LatexTransformer.java)
 
 Pipeline for supported transformations should be defined in JSON format following [T-Engine configuration](https://github.com/Alfresco/alfresco-transform-core/blob/master/docs/transform-config.md#t-engine-configuration) guideline.
 
-Sample pipeline for the Pandoc Transform Engine is provided in [engine_config.json](pandoc-t-engine/src/main/resources/engine_config.json), to transform Markdown to PDF mimetype.
+Sample pipeline for the Pandoc Transform Engine is provided in [engine_config.json](pandoc-t-engine/src/main/resources/engine_config.json), to transform Markdown and LaTeX to PDF mimetype.
 
 Once the Docker Image has been built as `alfresco/pandoc-t-engine` (details available in [README.md](pandoc-t-engine/README.md)), deployment configuration for Docker Compose includes a URL environment variable in `alfresco` service and `transform-pandoc` service deployment:
 
