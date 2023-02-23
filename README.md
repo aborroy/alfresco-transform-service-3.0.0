@@ -84,7 +84,7 @@ Once the service is running, registered transformations are available in Transfo
 
 http://localhost:8090/transform/config
 
-Additional endpoints for http://localhost:8090/transform:
+Additional endpoints for http://localhost:8090:
 
 * `POST /transform` to perform a transform. Performs a transform on content uploaded as a Multipart File and provides the resulting content as a download. Transform options are extracted from the request properties. The following are not added as transform options, but are used to select the transformer: `sourceMimetype` & `targetMimetype`
 * `GET /` provides an html test page to upload a source file, enter transform options and issue a synchronous transform request.
