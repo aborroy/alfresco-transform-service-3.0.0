@@ -32,24 +32,26 @@ import org.alfresco.transform.base.executors.RuntimeExec;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import java.io.*;
+import java.io.File;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.HashMap;
 import java.util.Map;
 
 @Component
-public class MarkdownTransformer implements CustomTransformer
+public class LatexTransformer implements CustomTransformer
 {
 
     @Value("${pandoc.exe}")
     String pandocExe;
 
-    @Value("${pandoc.markdown.arguments}")
+    @Value("${pandoc.latex.arguments}")
     String pandocArguments;
 
     @Override
     public String getTransformerName()
     {
-        return "markdown";
+        return "latex";
     }
 
     @Override
